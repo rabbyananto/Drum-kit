@@ -5,7 +5,6 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
     var buttonInnerHTML = this.innerHTML;
 
     makeSound(buttonInnerHTML);
-
     buttonAnimation(buttonInnerHTML);
   });
 }
@@ -52,7 +51,7 @@ function makeSound(key) {
       kick.play();
       break;
 
-    //capital letters
+    //Incase capital letter are pressed in keyboard
 
     case "W":
       var tom1 = new Audio("sounds/tom-1.mp3");
